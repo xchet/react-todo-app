@@ -4,9 +4,9 @@ class Note extends Component {
 
   render() {
     return (
-        <div className="note" onClick={this.props.deleteMethod} title="Click to delete">
-            {this.props.text}
-        </div>
+      <div className="note" onClick={() => this.deleteNote(n.id)}>
+        {n.note}
+      </div>
     );
   }
 }
